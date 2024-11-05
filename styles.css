@@ -1,10 +1,9 @@
 .container {
-    background-color: #f2eae3;
+    background-color: hsl(30, 38%, 92%);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
     margin: 0;
     padding: 0;
 }
@@ -13,9 +12,10 @@
     background-color: #fff;
     border: 1px solid transparent;
     border-radius: 1.2em;
-    width: 280px;
+    margin: 48px;
+    width: 100%;
 
-    @media (min-width: 48em) {
+    @media (min-width: 580px) {
         display: flex;
         width: 580px;
     }
@@ -30,9 +30,10 @@
     border-top-right-radius: 1.2em;
     height: 200px;
     
-    @media (min-width: 48em) {
+
+    @media (min-width: 580px) {
         flex: 1;
-        width: 220px;
+        width: 200px;
         border-bottom-left-radius: 1.2em;
         border-top-right-radius: 0;
         height: 400px;
@@ -42,7 +43,7 @@
 .card__body {
     padding: 20px;
 
-    @media (min-width: 48em) {
+    @media (min-width: 580px) {
         width: 260px;
     }
 }
@@ -65,12 +66,12 @@
 .card__prices {
     align-items: center;
     display: flex;
-    gap: 1.2em;
+    gap: .8em;
 }
 
 .price--current {
     color: #3c8168;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: 900;
 }
 
@@ -80,7 +81,7 @@
 }
 
 .button--add-to-cart {
-    background-color: #3c8168;
+    background-color: hsl(158, 36%, 37%);
     border: 1px solid transparent;
     border-radius: 8px;
     display: flex;
@@ -90,6 +91,11 @@
     justify-content: center;
     padding: 12px;
     width: 100%;
+}
+
+.button--add-to-cart:hover {
+    cursor: pointer;
+    background-color: hsl(228, 12%, 48%);
 }
 
 .attribution {
